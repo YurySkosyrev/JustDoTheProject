@@ -10,7 +10,14 @@ public abstract class Person {
     private Address address;
 
     public Person(){
-        System.out.println("Вызван конструктор предка");
+
+    }
+
+    public Person(String surName, String givenName, String patronymic, LocalDate dataOfBirth) {
+        this.surName = surName;
+        this.givenName = givenName;
+        this.patronymic = patronymic;
+        this.dataOfBirth = dataOfBirth;
     }
 
     public String getSurName() {
