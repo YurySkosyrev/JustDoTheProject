@@ -30,46 +30,55 @@ public class StudentOrderValidator {
     }
 
     public void checkAll() {
-        while (true) {
-            StudentOrder so = readStudentOrder();
 
-            if (so == null)
-                break;
+        StudentOrder[] soArray = readStudentOrders();
 
-            AnswerCityRegister cityAnswer = checkCityRegister(so);
-            if (!cityAnswer.success)
-                continue;
-            AnswerWedding wedAnswer = checkWedding(so);
-            AnswerChildren childAnswer = checkChildren(so);
-            AnswerStudent studentAnswer = checkStudent(so);
-
-            sendMail(so);
+        for (int i = 0; i < soArray.length; i++){
+            checkOneOrder(soArray[i]);
         }
+
     }
 
-    private static StudentOrder readStudentOrder() {
+    private static StudentOrder[] readStudentOrders() {
+        StudentOrder[] soArray = new StudentOrder[3];
+
+        for(int i = 0; i < soArray.length; i++){
+            soArray[i] = SaveStudentOrder.buildStudentOrder(i);
+        }
         StudentOrder so = new StudentOrder();
-        return so;
+        return soArray;
     }
 
+    public void checkOneOrder(StudentOrder so){
+        AnswerCityRegister cityAnswer = checkCityRegister(so);
+        AnswerWedding wedAnswer = checkWedding(so);
+        AnswerChildren childAnswer = checkChildren(so);
+        AnswerStudent studentAnswer = checkStudent(so);
+        sendMail(so);
+    }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so) {
+        System.out.println("CityRegister is running");
         return cityRegisterVal.checkCityRegister(so);
     }
 
     public AnswerWedding checkWedding(StudentOrder so) {
+        System.out.println("Wedding is running");
         return weddingVal.checkWedding(so);
     }
 
     public AnswerChildren checkChildren(StudentOrder so) {
+        System.out.println("Children is running");
         return childrenVal.checkChildren(so);
     }
 
     public AnswerStudent checkStudent(StudentOrder so) {
+        System.out.println("Student is running");
         return studentVal.checkStudent(so);
     }
 
     public void sendMail(StudentOrder so) {
+        System.out.println("Mail is sending");
         mailSender.sendMail(so);
     }
 }
