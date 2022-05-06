@@ -7,6 +7,14 @@ public class Address {
     private String extension;
     private String appartment;
 
+    public Address(String postCode, String street, String building, String extension, String appartment) {
+        this.postCode = postCode;
+        this.street = street;
+        this.building = building;
+        this.extension = extension;
+        this.appartment = appartment;
+    }
+
     public String getPostCode() {
         return postCode;
     }

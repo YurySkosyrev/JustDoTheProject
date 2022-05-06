@@ -1,10 +1,16 @@
 package edu.javacourse.studentorder.domain;
 
+import javax.xml.crypto.Data;
+import java.time.LocalDate;
+
 public class StudentOrder {
    private long studentOrderId;
    private Adult husband;
    private Adult wife;
    private Child child;
+   private String marriageCertificateId;
+   private LocalDate marriageDate;
+   private String marriageOffice;
 
     public long getStudentOrderId() {
         return studentOrderId;
@@ -36,5 +42,17 @@ public class StudentOrder {
 
     public void setChild(Child child) {
         this.child = child;
+    }
+
+    public void setMarriageCertificateId(String marriageCertificateId) {
+        this.marriageCertificateId = marriageCertificateId;
+    }
+
+    public void setMarriageDate(LocalDate marriageDate) {
+        this.marriageDate = marriageDate;
+    }
+
+    public void setMarriageOffice(String marriageOffice) {
+        this.marriageOffice = marriageOffice;
     }
 }
