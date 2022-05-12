@@ -21,7 +21,7 @@ CREATE TABLE jc_country_struct
 
 CREATE TABLE jc_passport_office
 (
-	p_office_id char(12) not null,
+	p_office_id integer not null,
 	p_office_area_id char(12),
     p_office_name varchar(200),
 	PRIMARY KEY (p_office_id),
@@ -31,7 +31,7 @@ CREATE TABLE jc_passport_office
 
 CREATE TABLE jc_register_office
 (
-	r_office_id char(12) not null,
+	r_office_id integer not null,
 	r_office_area_id char(12),
     r_office_name varchar(200),
 	PRIMARY KEY (r_office_id),
@@ -71,7 +71,7 @@ CREATE TABLE jc_student_order
     PRIMARY KEY (student_order_id),
     FOREIGN KEY (h_street_code) REFERENCES jc_street(street_code) ON DELETE RESTRICT,
     FOREIGN KEY (w_street_code) REFERENCES jc_street(street_code) ON DELETE RESTRICT,
-    FOREIGN KEY (office_area_id) REFERENCES jc_register_office(r_office_id)  ON DELETE RESTRICT
+    FOREIGN KEY (register_office_id) REFERENCES jc_register_office(r_office_id)  ON DELETE RESTRICT
 );
 
 CREATE TABLE jc_student_child
@@ -83,7 +83,7 @@ CREATE TABLE jc_student_child
     c_date_of_birth date not null,
     c_certificate_number varchar (10) not null,
     c_certificate_date varchar (10) not null,
-    c_register_office_id varchar (10) not null,
+    c_register_office_id integer not null,
     c_post_index varchar(10),
     c_street_code integer not null,
     c_building varchar(10) not null,
@@ -91,5 +91,5 @@ CREATE TABLE jc_student_child
     c_apartment varchar(10),
     PRIMARY KEY (student_child_id),
     FOREIGN KEY (c_street_code) REFERENCES jc_street(street_code) ON DELETE RESTRICT,
-    FOREIGN KEY (c_register_office_id_area_id) REFERENCES jc_register_office(r_office_id)  ON DELETE RESTRICT
+    FOREIGN KEY (c_register_office_id) REFERENCES jc_register_office(r_office_id)  ON DELETE RESTRICT
 )
