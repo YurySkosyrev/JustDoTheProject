@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS jc_student_order;
 DROP TABLE IF EXISTS jc_register_office;
 DROP TABLE IF EXISTS jc_passport_office;
 DROP TABLE IF EXISTS jc_country_struct;
+DROP TABLE IF EXISTS jc_university;
 DROP TABLE IF EXISTS jc_street;
 
 CREATE TABLE jc_street
@@ -10,6 +11,13 @@ CREATE TABLE jc_street
 	street_code integer not null,
 	street_name varchar(300),
 	PRIMARY KEY (street_code)
+);
+
+CREATE TABLE jc_university
+(
+	univercity_id char(12) not null,
+	univercity_name varchar(200),
+	PRIMARY KEY (univercity_id)
 );
 
 CREATE TABLE jc_country_struct
