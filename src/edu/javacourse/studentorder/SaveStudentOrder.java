@@ -1,28 +1,21 @@
 package edu.javacourse.studentorder;
 
-import edu.javacourse.studentorder.domain.wedding.Address;
-import edu.javacourse.studentorder.domain.wedding.Adult;
-import edu.javacourse.studentorder.domain.wedding.Child;
-import edu.javacourse.studentorder.domain.wedding.StudentOrder;
+import edu.javacourse.studentorder.dao.DictionaryDaoImpl;
+import edu.javacourse.studentorder.domain.wedding.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.LocalDate;
+import java.util.List;
 
 public class SaveStudentOrder {
     public static void main(String[] args) throws Exception {
-        Class.forName("org.postgresql.Driver");
-        Connection con =DriverManager.getConnection("jdbc:postgresql://localhost:5432/jc_student",
-                "postgres", "1234567");
-
-        Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM jc_street");
-        while (rs.next()){
-            System.out.println(rs.getLong(1) + " : " + rs.getString(2));
+        List<Street> d = new DictionaryDaoImpl().findStreets("d");
+        for (Street s : d){
+            System.out.println(s.getStreetName());
         }
-
     }
 
     private static long saveStudentOrder(StudentOrder so){
@@ -37,7 +30,9 @@ public class SaveStudentOrder {
         so.setMarriageDate(LocalDate.of(2016, 7, 4));
         so.setMarriageOffice("Отдел ЗАГС");
 
-        Address address = new Address("195000", "Заневский пр.", "12", "", "142");
+        Street street = new Street(1L, "First Street");
+
+        Address address = new Address("195000", street, "12", "", "142");
 
         Adult husband = new Adult("Петров","Виктор", "Сергеевич", LocalDate.of(1997, 8, 24));
         husband.setPassportSeria("" + (1000 + id));
