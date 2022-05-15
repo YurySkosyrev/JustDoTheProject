@@ -5,7 +5,7 @@ INSERT INTO jc_street (street_code, street_name) VALUES
 (4, 'улица Гороховая'),
 (5, 'проспект Ветеранов');
 
-INSERT INTO jc_university (university_id, university_name) VALUES
+INSERT INTO jc_univercity (univercity_id, univercity_name) VALUES
 (1, 'Санкт-Петербургский Государственный Университет'),
 (2, 'Санкт-Петербургский Политехнический Университет'),
 (3, 'Санкт-Петербургский Морской Технический Университет');

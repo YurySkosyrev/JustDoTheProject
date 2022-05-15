@@ -6,7 +6,7 @@ public class Adult extends Person {
     private String passportSeria;
     private String passportNumber;
     private LocalDate issueDate;
-    private String issueDepartment;
+    private PasportOffice issueDepartment;
     private String university;
     private String studentId;
 
@@ -59,11 +59,11 @@ public class Adult extends Person {
         this.issueDate = issueDate;
     }
 
-    public String getIssueDepartment() {
+    public PasportOffice getIssueDepartment() {
         return issueDepartment;
     }
 
-    public void setIssueDepartment(String issueDepartment) {
+    public void setIssueDepartment(PasportOffice issueDepartment) {
         this.issueDepartment = issueDepartment;
     }
 }
