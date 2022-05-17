@@ -28,7 +28,7 @@ public class CityRegisterValidator {
 
         ans.addItem(checkPerson(so.getHusband()));
         ans.addItem(checkPerson(so.getWife()));
-        List<Child> children = so.getChild();
+        List<Child> children = so.getChildren();
         for(Child child : children ) {
             ans.addItem(checkPerson(child));
         }

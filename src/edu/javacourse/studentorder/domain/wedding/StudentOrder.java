@@ -40,7 +40,7 @@ public class StudentOrder {
         this.wife = wife;
     }
 
-    public List<Child> getChild() {
+    public List<Child> getChildren() {
         return children;
     }
 

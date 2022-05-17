@@ -1,16 +1,10 @@
 package edu.javacourse.studentorder;
 
-import edu.javacourse.studentorder.dao.DictionaryDaoImpl;
-import edu.javacourse.studentorder.dao.StudentDaoImpl;
+import edu.javacourse.studentorder.dao.StudentOrderDaoImpl;
 import edu.javacourse.studentorder.dao.StudentOrderDao;
 import edu.javacourse.studentorder.domain.wedding.*;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.time.LocalDate;
-import java.util.List;
 
 public class SaveStudentOrder {
     public static void main(String[] args) throws Exception {
@@ -50,7 +44,7 @@ public class SaveStudentOrder {
 //        }
 
         StudentOrder s = buildStudentOrder(10);
-        StudentOrderDao dao = new StudentDaoImpl();
+        StudentOrderDao dao = new StudentOrderDaoImpl();
         Long id = dao.saveStudentOrder(s);
         System.out.println(id);
 
