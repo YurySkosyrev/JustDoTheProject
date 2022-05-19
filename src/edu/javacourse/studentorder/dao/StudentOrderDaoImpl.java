@@ -7,6 +7,8 @@ import edu.javacourse.studentorder.exception.DaoException;
 import java.sql.*;
 import java.time.LocalDateTime;
 
+
+//Git
 public class StudentOrderDaoImpl implements StudentOrderDao{
     private static final String INSERT_ORDER = "INSERT INTO jc_student_order(" +
             "student_order_status, student_order_date, h_sur_name, h_given_name, h_patronymic, h_date_of_birth, " +
