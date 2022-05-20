@@ -6,6 +6,8 @@ import edu.javacourse.studentorder.exception.DaoException;
 
 import java.sql.*;
 import java.time.LocalDateTime;
+import java.util.LinkedList;
+import java.util.List;
 
 
 //Git
@@ -24,6 +26,10 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
             "c_date_of_birth, c_certificate_number, c_certificate_date, c_register_office_id, " +
             "c_post_index, c_street_code, c_building, c_extension, c_apartment)" +
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+
+    private  static final String SELECT_ORDERS =
+            "SELECT * FROM jc_student_order WHERE student_order_status = 0 ORDER BY student_order_date";
+
 
     //TODO refactoring - make one method
     private Connection getConnection() throws SQLException {
@@ -77,6 +83,33 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
         }
 
         return result;
+    }
+
+    @Override
+    public List<StudentOrder> getStudentOrders() throws DaoException {
+        List<StudentOrder> result = new LinkedList<>();
+        try(Connection con = getConnection();
+            PreparedStatement stmt = con.prepareStatement(SELECT_ORDERS)){
+
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()){
+                StudentOrder so = new StudentOrder();
+                fillStudentOrder(rs, so);
+            }
+
+            rs.close();
+
+        } catch (SQLException ex) {
+            throw new DaoException(ex);
+        }
+
+        return result;
+    }
+
+    private void fillStudentOrder(ResultSet rs, StudentOrder so) throws SQLException{
+        so.setStudentOrderId(rs.getLong("student_order_id"));
+        so.setStudentOrderDate(rs.getTimestamp("student_order_date").toLocalDateTime());
+        so.setStudentOrderStatus();
     }
 
     private void saveChildren(Connection con, StudentOrder so, Long soId) throws SQLException{
