@@ -15,6 +15,10 @@ public class Address {
         this.appartment = appartment;
     }
 
+    public Address() {
+
+    }
+
     public String getPostCode() {
         return postCode;
     }
