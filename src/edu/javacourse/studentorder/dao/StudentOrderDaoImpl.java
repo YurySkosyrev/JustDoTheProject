@@ -8,6 +8,7 @@ import java.sql.*;
 import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class StudentOrderDaoImpl implements StudentOrderDao{
@@ -19,14 +20,14 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
             "w_passport_number, w_passport_date, w_passport_office_id, w_post_index, w_street_code, w_building, " +
             "w_extension, w_apartment, w_university_id, w_student_number, " +
             "certificate_id, register_office_id, marriage_date)" +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     private static final String INSERT_CHILD ="INSERT INTO public.jc_student_child(" +
             "student_order_id, c_sur_name, c_given_name, c_patronymic, " +
             "c_date_of_birth, c_certificate_number, c_certificate_date, c_register_office_id, " +
             "c_post_index, c_street_code, c_building, c_extension, c_apartment)" +
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-    private final String SELECT_ORDERS =
+    private static final String SELECT_ORDERS =
             "SELECT  so.*, ro.r_office_area_id, ro.r_office_name, " +
             "po_h.p_office_area_id as h_p_office_area_id, po_h.p_office_name as h_p_office_name, " +
             "po_w.p_office_area_id as w_p_office_area_id, po_w.p_office_name as w_p_office_name " +
@@ -34,7 +35,14 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
             "INNER JOIN jc_register_office ro ON ro.r_office_id = so.register_office_id " +
             "INNER JOIN jc_passport_office po_h ON po_h.p_office_id = so.h_passport_office_id " +
             "INNER JOIN jc_passport_office po_w ON po_w.p_office_id = so.w_passport_office_id " +
-            "WHERE student_order_status = 0 ORDER BY student_order_date";
+            "WHERE student_order_status = ? ORDER BY student_order_date";
+
+    private static final String SELECT_CHILD =
+            "SELECT soc.*, ro.r_office_area_id, ro.r_office_name " +
+                    "FROM jc_student_child soc " +
+                    "INNER JOIN jc_register_office ro ON ro.r_office_id = " +
+                    "soc.c_register_office_id " +
+                    "WHERE student_order_id IN ";
 
 
     //TODO refactoring - make one method
@@ -143,18 +151,22 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
         try(Connection con = getConnection();
             PreparedStatement stmt = con.prepareStatement(SELECT_ORDERS)){
 
+            stmt.setInt(1, StudentOrderStatus.START.ordinal());
             ResultSet rs = stmt.executeQuery();
             while (rs.next()){
                 StudentOrder so = new StudentOrder();
                 fillStudentOrder(rs, so);
                 fillMarriage(rs, so);
-                result.add(so);
+
                 Adult husband = fillAdult(rs, "h_");
                 Adult wife = fillAdult(rs, "w_");
 
                 so.setHusband(husband);
                 so.setWife(wife);
+
+                result.add(so);
             }
+            findChildren(con, result);
 
             rs.close();
 
@@ -163,6 +175,19 @@ public class StudentOrderDaoImpl implements StudentOrderDao{
         }
 
         return result;
+    }
+
+    private void findChildren(Connection con, List<StudentOrder> result) throws SQLException {
+        String cl = "(" +  result.stream().map(so -> String.valueOf(so.getStudentOrderId()))
+        .collect(Collectors.joining(",")) + ")";
+
+        try (PreparedStatement stmt = con.prepareStatement(SELECT_CHILD + cl)) {
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next())
+            {
+                System.out.println(rs.getLong(1) + ":" + rs.getString(3));
+            }
+        }
     }
 
     private Adult fillAdult(ResultSet rs, String pref) throws SQLException {
