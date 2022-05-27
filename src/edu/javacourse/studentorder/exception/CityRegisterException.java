@@ -1,5 +1,9 @@
 package edu.javacourse.studentorder.exception;
 
+import java.util.Objects;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
 public class CityRegisterException extends Exception{
 
     private String code;
