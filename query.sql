@@ -11,3 +11,4 @@ WHERE student_order_status = 0 ORDER BY student_order_date;
 
 
 CREATE INDEX idx_student_order_status ON jc_student_order(student_order_status);
+CREATE INDEX idx_student_order_status ON jc_student_order(student_order_status);
