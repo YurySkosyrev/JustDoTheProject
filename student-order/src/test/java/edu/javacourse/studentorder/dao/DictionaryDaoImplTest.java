@@ -1,5 +1,7 @@
 package edu.javacourse.studentorder.dao;
 
+
+
 import edu.javacourse.studentorder.domain.wedding.CountryArea;
 import edu.javacourse.studentorder.domain.wedding.PasportOffice;
 import edu.javacourse.studentorder.domain.wedding.RegisterOffice;
@@ -9,6 +11,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -24,6 +28,8 @@ import static org.junit.Assert.*;
 
 public class DictionaryDaoImplTest {
 
+    private static final Logger logger = LoggerFactory.getLogger(DictionaryDaoImplTest.class);
+
     @BeforeClass // Выполняется один раз перед всеми тестами
     public static void startUp() throws Exception {
         DBInit.startUp();
@@ -36,6 +42,7 @@ public class DictionaryDaoImplTest {
 
     @Test
     public void testStreet() throws DaoException {
+        logger.info("TEST");
         List<Street> d = new DictionaryDaoImpl().findStreets("про");
         Assert.assertTrue(d.size() == 2);
     }
