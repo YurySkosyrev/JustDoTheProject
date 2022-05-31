@@ -90,4 +90,20 @@ public class StudentOrder {
     public void setMarriageDate(LocalDate marriageDate) {
         this.marriageDate = marriageDate;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("StudentOrder{");
+        sb.append("studentOrderId=").append(studentOrderId);
+        sb.append(", studentOrderStatus=").append(studentOrderStatus);
+        sb.append(", studentOrderDate=").append(studentOrderDate);
+        sb.append(", husband=").append(husband);
+        sb.append(", wife=").append(wife);
+        sb.append(", children=").append(children);
+        sb.append(", marriageCertificateId='").append(marriageCertificateId).append('\'');
+        sb.append(", marriageDate=").append(marriageDate);
+        sb.append(", marriageOffice=").append(marriageOffice);
+        sb.append('}');
+        return sb.toString();
+    }
 }

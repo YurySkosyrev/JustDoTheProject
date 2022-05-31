@@ -37,4 +37,14 @@ public class RegisterOffice {
     public void setOfficeName(String officeName) {
         this.officeName = officeName;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("RegisterOffice{");
+        sb.append("officeId=").append(officeId);
+        sb.append(", officeAreaId='").append(officeAreaId).append('\'');
+        sb.append(", officeName='").append(officeName).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

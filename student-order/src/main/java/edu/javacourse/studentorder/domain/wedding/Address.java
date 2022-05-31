@@ -58,4 +58,15 @@ public class Address {
     public void setAppartment(String appartment) {
         this.appartment = appartment;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "postCode='" + postCode + '\'' +
+                ", street=" + street +
+                ", building='" + building + '\'' +
+                ", extension='" + extension + '\'' +
+                ", appartment='" + appartment + '\'' +
+                '}';
+    }
 }

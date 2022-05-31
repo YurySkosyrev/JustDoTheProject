@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -42,7 +43,10 @@ public class DictionaryDaoImplTest {
 
     @Test
     public void testStreet() throws DaoException {
-        logger.info("TEST");
+        LocalDateTime dt1 = LocalDateTime.now();
+        LocalDateTime dt2 = LocalDateTime.now();
+        logger.info("TEST {} {}", dt1, dt2);
+
         List<Street> d = new DictionaryDaoImpl().findStreets("про");
         Assert.assertTrue(d.size() == 2);
     }
