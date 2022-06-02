@@ -5,7 +5,7 @@
 Используемые технологии:
 <ul>
   <li>Java Core</li>
-  <li>Postgres</li>
+  <li>PostgreSQL</li>
   <li>Maven</li>
   <li>JUnit</li>
   <li>Log4j</li>
