@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 84/160">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/exception/PersonCheckException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../student-order/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../student-order/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../student-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../student-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/register.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
       <updated>1654279405470</updated>
       <workItem from="1654279407701" duration="5512000" />
       <workItem from="1654286036624" duration="17000" />
+      <workItem from="1654286204730" duration="1494000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
