@@ -59,4 +59,16 @@ public abstract class Person {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Person{");
+        sb.append("surName='").append(surName).append('\'');
+        sb.append(", givenName='").append(givenName).append('\'');
+        sb.append(", patronymic='").append(patronymic).append('\'');
+        sb.append(", dataOfBirth=").append(dataOfBirth);
+        sb.append(", address=").append(address);
+        sb.append('}');
+        return sb.toString();
+    }
 }

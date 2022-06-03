@@ -27,4 +27,13 @@ public class University {
     public void setUniversityName(String universityName) {
         this.universityName = universityName;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("University{");
+        sb.append("universityId=").append(universityId);
+        sb.append(", universityName='").append(universityName).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }

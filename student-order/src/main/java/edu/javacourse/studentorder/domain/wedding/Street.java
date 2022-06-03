@@ -27,4 +27,13 @@ public class Street {
     public void setStreetName(String streetName) {
         this.streetName = streetName;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Street{");
+        sb.append("streetCode=").append(streetCode);
+        sb.append(", streetName='").append(streetName).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
