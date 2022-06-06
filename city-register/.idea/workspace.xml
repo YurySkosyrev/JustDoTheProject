@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 84/160">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/PersonCheckDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/javacourse/net/SimpleSocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/register.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +31,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$PROJECT_DIR$/../../../Program Files/JetBrains/IntelliJ IDEA 2020.2.3/plugins/maven/lib/maven3" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -52,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Java/JustDoTheProject/city-register",
+    "last_opened_file_path": "D:/Java/JustDoTheProject/city-register",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,7 +67,7 @@
       <recent name="edu.javacourse.city.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonCheckDaoTest">
+  <component name="RunManager" selected="JUnit.SimpleSocket.simpleSocket">
     <configuration name="PersonCheckDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="city-register" />
       <extension name="coverage">
@@ -119,8 +115,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleSocket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-register" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.javacourse.net.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.javacourse.net" />
+      <option name="MAIN_CLASS_NAME" value="edu.javacourse.net.SimpleSocket" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleSocket.simpleSocket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="city-register" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.javacourse.net.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.javacourse.net" />
+      <option name="MAIN_CLASS_NAME" value="edu.javacourse.net.SimpleSocket" />
+      <option name="METHOD_NAME" value="simpleSocket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleSocket.simpleSocket" />
+        <item itemvalue="JUnit.SimpleSocket" />
         <item itemvalue="JUnit.PersonCheckDaoTest" />
         <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson2" />
         <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson" />
