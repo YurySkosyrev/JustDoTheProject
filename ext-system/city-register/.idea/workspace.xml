@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 84/160">
+    <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/JustDoTheProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/city/dao/PersonCheckDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/city/dao/PersonCheckDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../network-tcp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../network-tcp/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "D:/Java/JustDoTheProject/ext-system/city-register",
+    "last_opened_file_path": "D:/Java/JustDoTheProject/.gitignore",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -181,7 +178,7 @@
       <workItem from="1654538017620" duration="158000" />
       <workItem from="1654714269556" duration="847000" />
       <workItem from="1654715133200" duration="2466000" />
-      <workItem from="1654759712568" duration="6001000" />
+      <workItem from="1654759712568" duration="7028000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
@@ -190,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654284509791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Step 100/160">
+      <created>1654770717699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654770717699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +216,8 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Step 84/160" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 84/160" />
+    <MESSAGE value="Step 100/160" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 100/160" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
