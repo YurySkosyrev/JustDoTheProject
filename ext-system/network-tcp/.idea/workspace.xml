@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22eeb803-4e1c-487d-9d57-55773d7fd235" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/javacourse/net/Greetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/javacourse/net/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/src/main/java/javacourse/greet/DayGreet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/src/main/java/javacourse/greet/EveningGreet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/src/main/java/javacourse/greet/MorningGreet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/javacourse/net/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/server.properties" afterDir="false" />
-    </list>
+    <list default="true" id="22eeb803-4e1c-487d-9d57-55773d7fd235" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

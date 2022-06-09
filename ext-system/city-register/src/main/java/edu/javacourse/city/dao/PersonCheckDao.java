@@ -8,6 +8,14 @@ import java.sql.*;
 
 public class PersonCheckDao {
 
+    public PersonCheckDao(){
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private static final String SQL_REQUEST = "SELECT temporal FROM cr_address_person ap " +
             "INNER JOIN cr_person p on p.person_id = ap.person_id " +
             "INNER JOIN cr_address a on a.address_id = ap.address_id " +
