@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
-      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/JustDoTheProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/ConnectionBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PoolConnectionBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/DirectConnectionBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/dao/PersonCheckDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/PersonCheckDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/PersonCheckDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/javacourse/city/dao/PersonCheckDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/javacourse/city/dao/PersonCheckDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/javacourse/city/dao/PersonCheckDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/javacourse/city/dao/PersonCheckDaoTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,7 +60,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "D:/Java/JustDoTheProject/.gitignore",
+    "last_opened_file_path": "C:/Java/JavaProblems",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,7 +79,7 @@
       <recent name="edu.javacourse.city.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonCheckDaoTest.checkPerson">
+  <component name="RunManager" selected="JUnit.PersonCheckDaoTest">
     <configuration name="PersonCheckDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="city-register" />
       <extension name="coverage">
@@ -153,10 +160,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonCheckDaoTest" />
         <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson" />
         <item itemvalue="JUnit.SimpleSocket.simpleSocket" />
         <item itemvalue="JUnit.SimpleSocket" />
-        <item itemvalue="JUnit.PersonCheckDaoTest" />
         <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson2" />
       </list>
     </recent_temporary>
@@ -179,6 +186,7 @@
       <workItem from="1654714269556" duration="847000" />
       <workItem from="1654715133200" duration="2466000" />
       <workItem from="1654759712568" duration="7028000" />
+      <workItem from="1654796605396" duration="3541000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
