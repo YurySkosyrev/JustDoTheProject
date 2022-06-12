@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/LocalDateAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/domain/PersonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +58,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -183,7 +183,9 @@
       <workItem from="1654796605396" duration="3541000" />
       <workItem from="1654882363630" duration="7755000" />
       <workItem from="1654973321653" duration="668000" />
-      <workItem from="1654974150484" duration="3241000" />
+      <workItem from="1654974150484" duration="3874000" />
+      <workItem from="1655038786471" duration="46000" />
+      <workItem from="1655038837127" duration="2012000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>

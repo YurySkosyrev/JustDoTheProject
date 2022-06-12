@@ -92,6 +92,7 @@
                 <version>2.2</version>
                 <configuration>
                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <outputDirectory>C:\Java\Utils\apache-tomcat-8.5.79\webapps</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>
