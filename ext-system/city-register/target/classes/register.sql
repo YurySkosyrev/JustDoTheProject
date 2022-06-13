@@ -71,7 +71,7 @@ VALUES ('Васильева', 'Евгения', 'Павловна', '2016-01-11'
 
 INSERT INTO cr_person(sur_name, given_name, patronymic, date_of_birth,
 passport_seria, passport_number, passport_date, certificate_number, certificate_date)
-VALUES ('Васильев', 'Алексадр', 'Павлович', '2018-10-24', null, null, null, '321654', '2018-11-09');
+VALUES ('Васильев', 'Александр', 'Павлович', '2018-10-24', null, null, null, '321654', '2018-11-09');
 
 CREATE TABLE cr_address_person (
     person_address_id SERIAL,

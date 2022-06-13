@@ -5,7 +5,6 @@ edu\javacourse\studentorder\config\Config.class
 edu\javacourse\studentorder\domain\children\AnswerChildren.class
 edu\javacourse\studentorder\domain\wedding\CountryArea.class
 edu\javacourse\studentorder\domain\register\AnswerCityRegisterItem.class
-edu\javacourse\studentorder\validator\register\FakeCityRegisterChecker.class
 edu\javacourse\studentorder\domain\wedding\Street.class
 edu\javacourse\studentorder\StudentOrderValidator.class
 edu\javacourse\studentorder\domain\wedding\StudentOrder.class
@@ -21,14 +20,16 @@ edu\javacourse\studentorder\domain\wedding\Adult.class
 edu\javacourse\studentorder\validator\StudentValidator.class
 edu\javacourse\studentorder\domain\AnswerWedding.class
 edu\javacourse\studentorder\mail\MailSender.class
-edu\javacourse\studentorder\exception\TransportException.class
+edu\javacourse\studentorder\dao\ConnectionBuilder.class
 edu\javacourse\studentorder\validator\WeddingValidator.class
 edu\javacourse\studentorder\domain\wedding\Child.class
 edu\javacourse\studentorder\validator\CityRegisterValidator.class
 edu\javacourse\studentorder\dao\DictionaryDaoImpl.class
 edu\javacourse\studentorder\validator\register\RealCityRegisterChecker.class
+edu\javacourse\studentorder\domain\register\CityRegisterRequest.class
 edu\javacourse\studentorder\exception\DaoException.class
 edu\javacourse\studentorder\domain\register\AnswerCityRegisterItem$CityError.class
+edu\javacourse\studentorder\util\LocalDateAdapter.class
 edu\javacourse\studentorder\SaveStudentOrder.class
 edu\javacourse\studentorder\dao\StudentOrderDaoImpl.class
 edu\javacourse\studentorder\validator\register\CityRegisterChecker.class
