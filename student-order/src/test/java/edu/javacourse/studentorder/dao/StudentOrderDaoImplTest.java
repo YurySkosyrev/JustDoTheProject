@@ -45,9 +45,9 @@ public class StudentOrderDaoImplTest {
 
         Street street = new Street(1L, "First Street");
 
-        Address address = new Address("195000", street, "12", "", "142");
+        Address address = new Address("195000", street, "10", "2", "121");
 
-        Adult husband = new Adult("Петров","Виктор", "Сергеевич", LocalDate.of(1997, 8, 24));
+        Adult husband = new Adult("Васильев","Павел", "Николаевич", LocalDate.of(1995, 3, 18));
         husband.setPassportSeria("" + (1000 + id));
         husband.setPassportNumber("" + (100000 + id));
         husband.setIssueDate(LocalDate.of(2017, 9, 15));
@@ -58,10 +58,10 @@ public class StudentOrderDaoImplTest {
         husband.setUniversity(new University(2L, ""));
         husband.setStudentId("HH12345");
 
-        Adult wife = new Adult("Петрова","Вероника", "Алексеевна", LocalDate.of(1998, 3, 12));
+        Adult wife = new Adult("Васильева","Ирина", "Петровна", LocalDate.of(1997, 6, 21));
         wife.setPassportSeria("" + (2000 + id));
         wife.setPassportNumber("" + (200000 + id));
-        wife.setIssueDate(LocalDate.of(2018, 4, 5));
+        wife.setIssueDate(LocalDate.of(2017, 9, 19));
         PasportOffice po2 = new PasportOffice(2L,"","");
         wife.setIssueDepartment(po2);
         wife.setStudentId("" + (200000 + id));
@@ -69,16 +69,16 @@ public class StudentOrderDaoImplTest {
         wife.setUniversity(new University(1L, ""));
         wife.setStudentId("WW12345");
 
-        Child child1 = new Child("Петрова","Ирина", "Викторовна", LocalDate.of(2018, 6, 29));
+        Child child1 = new Child("Васильева","Евгения", "Павловна", LocalDate.of(2016, 1, 11));
         child1.setCertificateNumber("" + (300000 + id));
-        child1.setIssueDate(LocalDate.of(2018, 7, 19));
+        child1.setIssueDate(LocalDate.of(2016, 1, 21));
         RegisterOffice ro2 = new RegisterOffice(2L,"","");
         child1.setIssueDepartment(ro2);
         child1.setAddress(address);
 
-        Child child2 = new Child("Петров","Евгений", "Викторович", LocalDate.of(2018, 6, 29));
+        Child child2 = new Child("Васильев","Александр", "Павлович", LocalDate.of(2018, 10, 24));
         child2.setCertificateNumber("" + (400000 + id));
-        child2.setIssueDate(LocalDate.of(2018, 7, 19));
+        child2.setIssueDate(LocalDate.of(2018, 11, 9));
         RegisterOffice ro3 = new RegisterOffice(3L,"","");
         child2.setIssueDepartment(ro3);
         child2.setAddress(address);

@@ -5,9 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
+      <change afterPath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/domain/register/CityRegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/util/LocalDateAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/javacourse/city/web/CheckPersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/register.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/register.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/PersonCheckDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/javacourse/city/dao/PersonCheckDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/register.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/register.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/javacourse/city/dao/PersonCheckDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/javacourse/city/dao/PersonCheckDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/domain/register/CityRegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/domain/register/CityRegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/validator/CityRegisterValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/validator/CityRegisterValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/validator/register/FakeCityRegisterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/test/java/edu/javacourse/studentorder/validator/register/FakeCityRegisterChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/validator/register/RealCityRegisterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/main/java/edu/javacourse/studentorder/validator/register/RealCityRegisterChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/src/test/java/edu/javacourse/studentorder/dao/StudentOrderDaoImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/test/java/edu/javacourse/studentorder/dao/StudentOrderDaoImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/SaveStudentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/SaveStudentOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/StudentOrderValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/StudentOrderValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/config/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/config/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/ConnectionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/ConnectionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/DictionaryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/DictionaryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/DictionaryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/DictionaryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/StudentOrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/StudentOrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/StudentOrderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/dao/StudentOrderDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/AnswerWedding.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/AnswerWedding.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/children/AnswerChildren.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/children/AnswerChildren.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem$CityError.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem$CityError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem$CityStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem$CityStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/AnswerCityRegisterItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/CityRegisterResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/register/CityRegisterResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/student/AnswerStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/student/AnswerStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Adult.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Adult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Child.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/CountryArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/CountryArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/PasportOffice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/PasportOffice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/RegisterOffice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/RegisterOffice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Street.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/Street.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/StudentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/StudentOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/StudentOrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/StudentOrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/University.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/domain/wedding/University.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/CityRegisterException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/CityRegisterException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/DaoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/DaoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/TransportException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/exception/TransportException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/mail/MailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/mail/MailSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/ChildrenValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/ChildrenValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/CityRegisterValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/CityRegisterValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/StudentValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/WeddingValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/WeddingValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/register/CityRegisterChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/register/CityRegisterChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/register/FakeCityRegisterChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/register/RealCityRegisterChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/classes/edu/javacourse/studentorder/validator/register/RealCityRegisterChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/logfile_test.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/logfile_test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/DBInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/DBInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/DictionaryDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/DictionaryDaoImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/SimpleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/SimpleRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/StudentOrderDaoImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/target/test-classes/edu/javacourse/studentorder/dao/StudentOrderDaoImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +107,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/JustDoTheProject/ext-system/city-register&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java/JustDoTheProject/student-order&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -155,10 +209,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PersonCheckDaoTest" />
+        <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson2" />
         <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson" />
         <item itemvalue="JUnit.SimpleSocket.simpleSocket" />
         <item itemvalue="JUnit.SimpleSocket" />
-        <item itemvalue="JUnit.PersonCheckDaoTest.checkPerson2" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +239,10 @@
       <workItem from="1654973321653" duration="668000" />
       <workItem from="1654974150484" duration="3874000" />
       <workItem from="1655038786471" duration="46000" />
-      <workItem from="1655038837127" duration="2012000" />
+      <workItem from="1655038837127" duration="2187000" />
+      <workItem from="1655061203017" duration="1609000" />
+      <workItem from="1655062934733" duration="5000" />
+      <workItem from="1655063193942" duration="4976000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
