@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
-      <change afterPath="$PROJECT_DIR$/../register-office/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../register-office/src/main/java/edu/javacourse/register/domain/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../register-office/src/main/resources/register-office.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../register-office/src/main/java/edu/javacourse/register/manager/PersonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../register-office/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../student-order/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../student-order/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-office/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../register-office/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../register-office/src/main/java/edu/javacourse/register/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../register-office/src/main/java/edu/javacourse/register/domain/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +207,7 @@
       <workItem from="1655063193942" duration="4976000" />
       <workItem from="1655148434138" duration="3381000" />
       <workItem from="1655187416484" duration="70000" />
-      <workItem from="1655187660968" duration="1824000" />
+      <workItem from="1655187660968" duration="2424000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
