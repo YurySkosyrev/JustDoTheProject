@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160" />
+    <list default="true" id="3e42df40-5062-4080-945a-60cfb4946786" name="Changes" comment="Step 100/160">
+      <change beforePath="$PROJECT_DIR$/../register-office/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../register-office/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,6 +205,7 @@
       <workItem from="1655187416484" duration="70000" />
       <workItem from="1655187660968" duration="2424000" />
       <workItem from="1655226940335" duration="17000" />
+      <workItem from="1655272973703" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Step 84/160">
       <created>1654284509791</created>
