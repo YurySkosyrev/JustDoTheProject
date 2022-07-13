@@ -3,6 +3,7 @@ package edu.javacourse.register.dao;
 import edu.javacourse.register.domain.MarriageCertificate;
 import edu.javacourse.register.rest.MarriageController;
 import edu.javacourse.register.view.MarriageRequest;
+import edu.javacourse.register.view.MarriageResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
