@@ -19,4 +19,10 @@ public class PersonDao {
         query.setParameter("personId", 1L);
         return query.getResultList();
     }
+
+    public Long addPerson(Person person){
+        entityManager.persist(person);
+        entityManager.flush();
+        return person.getPersonId();
+    }
 }

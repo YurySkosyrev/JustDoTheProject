@@ -4,6 +4,7 @@ import edu.javacourse.register.dao.MarriageDao;
 import edu.javacourse.register.dao.PersonDao;
 import edu.javacourse.register.domain.MarriageCertificate;
 import edu.javacourse.register.domain.Person;
+import edu.javacourse.register.domain.PersonMale;
 import edu.javacourse.register.view.MarriageRequest;
 import edu.javacourse.register.view.MarriageResponse;
 import org.slf4j.Logger;
@@ -11,6 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.number.PercentStyleFormatter;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDate;
 
 @Service("marriageManager")
 public class MarriageManager {
@@ -22,12 +26,25 @@ public class MarriageManager {
     @Autowired
     private PersonDao personDao;
 
+    @Transactional
     public MarriageResponse findMarriageSertificate(MarriageRequest request){
         LOGGER.info("findMarriageSertificate called");
         MarriageCertificate cert = marriageDao.findMarriageCertificate(request);
 
         personDao.findPersons();
+        personDao.addPerson(getPerson());
+        personDao.addPerson(getPerson());
+        personDao.addPerson(getPerson());
 
         return new MarriageResponse();
+    }
+
+    private Person getPerson() {
+        Person m = new PersonMale();
+        m.setFirstName("1");
+        m.setLastName("2");
+        m.setPatronymic("3");
+        m.setDateOfBirth(LocalDate.of(1991,11,1));
+        return m;
     }
 }
